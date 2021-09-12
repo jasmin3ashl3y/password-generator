@@ -9,4 +9,8 @@
   - useNumbers
   - useSpecial
 
-URL for deployed website: 
+URL for deployed website: https://jasmin3ashl3y.github.io/password-generator/
+
+![result page](assets/screenshot_1.png)
+
+![criteria prompt](assets/screenshot_2.png)
