@@ -19,7 +19,7 @@ function writePassword() {
         var useUpper = prompt ("Do you want to use uppercase?")
         var useLower = prompt ("Do you want to use lowercase?")
         var useNumbers = prompt ("Do you want to use numbers?")
-        var useSpecial = ("Do you want to use special characters?") 
+        var useSpecial = prompt ("Do you want to use special characters?") 
         if (affirmative.includes(useUpper)){
             allChars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         }
@@ -36,21 +36,9 @@ function writePassword() {
     var password = generatePassword(passwordLength, allChars);
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-    console.log (generate.password);
 }
-
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
-  }
     
 // Get references to the #generate element
-generatePassword(0);
     
   var generateBtn = document.querySelector("#generate");
   var writePassword = generateBtn.addEventListener("click", writePassword);
